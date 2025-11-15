@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu WikiBraw</title>
+
+  <!-- Fuente de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" 
+    rel="stylesheet"
+  >
+
+  <!-- Tu archivo CSS principal -->
+  <link rel="stylesheet" href="archivo.css">
+
+  <!-- Ícono -->
+  <link rel="icon" type="image/webp" href="logo.webp">
+</head>
+
+<body>
+  <header class="barra-superior">
+    <div class="logo">Tu WikiBraw</div>
+
+    <nav class="menu">
+      <a href="inicio.html">Inicio</a>
+      <a href="Modos.html">Modos De Juego</a>
+      <a href="Brawlers.html">Brawlers!</a>
+      <a href="contactos.html">Contactos</a>
+    </nav>
+
+    <div class="iconos">
+      <button id="modo-btn">🌙</button>
+      <span>❤️</span>
+      <span>🔍</span>
+      <span>☰</span>
+    </div>
+  </header>
+
+  <!-- Botón para agregar -->
+  <button id="agregar-btn">➕ Agregar recuadro</button>
+
+  <!-- Contenedor de tarjetas -->
+  <div class="contenedor" id="contenedor">
+    <div class="recuadro" data-color="#ffffff">
+      <h1>¡Hola, mundo!</h1>
+      <p>Este es mi recuadro centrado 😎.</p>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>Agregar nuevo recuadro</h2>
+
+      <label>Título:</label>
+      <input type="text" id="titulo" placeholder="Ej. Producto X">
+
+      <label>Descripción:</label>
+      <textarea id="descripcion" placeholder="Describe el recuadro..."></textarea>
+
+      <label>Color del recuadro:</label>
+      <input type="color" id="color" value="#ffffff">
+
+      <label>Imagen:</label>
+      <input type="file" id="imagen" accept="image/*">
+
+      <div class="modal-buttons">
+        <button id="guardar-btn">Guardar</button>
+        <button id="cancelar-btn">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
